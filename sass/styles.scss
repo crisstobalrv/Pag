@@ -1,3 +1,8 @@
 @use 'initial';
+@use 'variables';
+@use 'header';
 
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+.main-container {
+    width: 375px;
+    border: 1px solid black;
+}

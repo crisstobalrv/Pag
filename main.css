@@ -9,4 +9,9 @@ body {
   font-family: "Kumbh Sans", sans-serif;
 }
 
+.main-container {
+  width: 375px;
+  border: 1px solid black;
+}
+
 /*# sourceMappingURL=main.css.map */
