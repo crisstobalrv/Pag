@@ -1,0 +1,8 @@
+.navbar{
+    // display: none;
+    border: 1px solid red;
+    width: 400px;
+    &__items{
+        list-style: none;
+    }
+}

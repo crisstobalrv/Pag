@@ -6,6 +6,8 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
+  <link rel="stylesheet" href="./main.css">
+
   <title>Frontend Mentor | E-commerce product page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -18,11 +20,13 @@
 
   <main class="main-container">
     <header class="header">
-      <img src="./images/icon-menu.svg" alt="menu icon">
-      <img src="./images/logo.svg" alt="logo img">
+      <div class="header__navigation">
+        <img class="header__menu" src="./images/icon-menu.svg" alt="menu icon">
+        <img class="header__logo" src="./images/logo.svg" alt="logo img">
+      </div>
 
       <nav class="navbar">
-        <ul class="nalivbar_items">
+        <ul class="navbar__items">
           <li><a class="navbar_link" href="#">Collections</a></li>
           <li><a class="navbar_link" href="#">Men</a></li>
           <li><a class="navbar_link" href="#">Women</a></li>
@@ -35,7 +39,7 @@
       <div class="modal-navbar__background">
         <nav class="modal-navbar">
           <img class="modal-navbar__close-icon" src="./images/icon-close.svg" alt="close img">
-          <ul class="nalivbar__items">
+          <ul class="modal-navbar__items">
             <li><a class="modal-navbar__link" href="#">Collections</a></li>
             <li><a class="modal-navbar__link" href="#">Men</a></li>
             <li><a class="modal-navbar__link" href="#">Women</a></li>
@@ -51,7 +55,7 @@
           <div class="header__cart--notification">3</div>
           <img src="./images/icon-cart.svg" alt="cart img">
         </div>
-        <img src="./images/image-avatar.png" alt="avatar img">
+        <img class="header__avatar" src="./images/image-avatar.png" alt="avatar img">
       </div>
     </header>
 
