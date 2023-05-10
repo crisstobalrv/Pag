@@ -1,0 +1,18 @@
+@use 'variables';
+
+.gallery{
+    &__image-container{
+        border: 1px solid blue;
+        height:300px;
+        width: 100%;
+        background-image: url(./images/image-product-1.jpg);
+        background-position-y: -35px;
+        background-size: cover;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    &__previus{
+        background-color: variables.$White;
+    }
+}

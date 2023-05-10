@@ -88,11 +88,29 @@ body {
 }
 
 .navbar {
+  display: none;
   border: 1px solid red;
   width: 400px;
 }
 .navbar__items {
   list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar__link {
+  text-decoration: none;
+  color: hsl(219, 9%, 45%);
+  display: block;
+  height: 112px;
+  padding-top: 42px;
+}
+.navbar__link:hover {
+  border-bottom: 4px solid hsl(26, 100%, 55%);
+}
+@media (min-width: 1115px) {
+  .navbar {
+    display: block;
+  }
 }
 
 .modal-navbar {
@@ -126,6 +144,21 @@ body {
 }
 .modal-navbar__close-icon:hover {
   cursor: pointer;
+}
+
+.gallery__image-container {
+  border: 1px solid blue;
+  height: 300px;
+  width: 100%;
+  background-image: url(./images/image-product-1.jpg);
+  background-position-y: -35px;
+  background-size: cover;
+}
+.gallery__image-container:hover {
+  cursor: pointer;
+}
+.gallery__previus {
+  background-color: hsl(0, 0%, 100%);
 }
 
 .main-container {
