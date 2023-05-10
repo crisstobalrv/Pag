@@ -3,7 +3,6 @@
 
 .gallery{
     &__image-container{
-        border: 1px solid blue;
         height:300px;
         width: 100%;
         background-image: url(./images/image-product-1.jpg);
@@ -16,10 +15,18 @@
     &__next{    
         @include mixins.image-btn(190px, 320px)
     }
-    &__thumbnail{
-        display: none;
-        @media (min-width: 1115px){
-            display: block;
+    &__thumbnails{
+        display: flex;
+        @media (min-width: 900px){
+        }
+    }
+    @media(min-width: 900px)
+    {
+        &__image-container{
+            width: 446px;
+            border-radius: 16px;
+            height: 446px;
+            margin-bottom: 32px;
         }
     }
 }

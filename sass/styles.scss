@@ -5,13 +5,22 @@
 @use 'modal-navbar';
 @use 'gallery';
 @use 'details';
+@use 'input';
+@use 'modal-cart';
 
 .main-container {
     width: 375px;
     border: 1px solid black;
     margin: auto;
     position: relative;
-    @media (min-width: 1115px) {
-            width: 1115px;
+    @media (min-width: 900px) {
+            width: 900px;
         }
+}
+.content{
+    @media(min-width: 900px){
+        display: flex;
+        padding: 90px 50px;
+        gap: 124;
+    }
 }
