@@ -1,5 +1,5 @@
 @use 'initial';
-@use 'variables';
+@use 'variables' as v;
 @use 'header';
 @use 'navbar';
 @use 'modal-navbar';
@@ -10,6 +10,7 @@
 @use 'modal-gallery';
 
 .main-container {
+    background-color: v.$White;
     width: 375px;
     margin: auto;
     position: relative;
