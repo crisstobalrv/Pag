@@ -1,4 +1,4 @@
-@use 'variables';
+@use 'variables' as v;
 @use 'mixins';
 
 .gallery{
@@ -10,20 +10,31 @@
         background-size: cover;
     }
     &__previus{
-        @include mixins.image-btn(190px, 15px)
+        @include mixins.image-btn(190px, 15px, false)
     }
     &__next{    
-        @include mixins.image-btn(190px, 320px)
+        @include mixins.image-btn(190px, 320px, false)
     }
-    &__thumbnails{
-        display: flex;
-        @media (min-width: 900px){
+    &__thumnails{
+        display: none;
+        @media (min-width: 1115px){
+            display: flex;
+            justify-content: space-between;
         }
     }
-    @media(min-width: 900px)
-    {
+    &__thumnail{
+        width: 90px;
+        border-radius: 16px;
+        &:hover{
+            cursor: pointer;
+            border: 4px solid v.$Orange;
+        }
+    }
+    @media(min-width: 1115px){
+        width: 446px;
+        cursor: pointer;
         &__image-container{
-            width: 446px;
+            background-position-y: 0;
             border-radius: 16px;
             height: 446px;
             margin-bottom: 32px;
